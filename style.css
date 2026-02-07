@@ -181,6 +181,14 @@ body {
     font-size: 1.2rem;
 }
 
+/* Add this new section below */
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 /* Social Links Section */
 .social-links {
     background-color: var(--light-bg);
