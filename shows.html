@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shows | Terriblething</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">TERRIBLETHING</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="shows.html" class="nav-link active">Shows</a></li>
+                <li><a href="listen.html" class="nav-link">Listen</a></li>
+                <li><a href="epk.html" class="nav-link">EPK</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Shows</h1>
+            <p>Catch us live in Victoria and beyond</p>
+        </div>
+    </section>
+
+    <section class="shows-section">
+        <div class="container">
+            <h2>Upcoming Shows</h2>
+            <div class="shows-list">
+                <!-- Example show - you can duplicate this structure -->
+                <div class="show-item">
+                    <div class="show-date">
+                        <span class="month">MAR</span>
+                        <span class="day">15</span>
+                    </div>
+                    <div class="show-details">
+                        <h3 class="show-venue">Venue Name</h3>
+                        <p class="show-location">Victoria, BC</p>
+                        <p class="show-info">With Special Guests • Doors 8pm • $15</p>
+                    </div>
+                    <div class="show-actions">
+                        <a href="#" class="btn btn-small">Tickets</a>
+                    </div>
+                </div>
+
+                <!-- Add more shows by copying the structure above -->
+                <div class="show-item upcoming">
+                    <div class="show-date">
+                        <span class="month">APR</span>
+                        <span class="day">22</span>
+                    </div>
+                    <div class="show-details">
+                        <h3 class="show-venue">Another Venue</h3>
+                        <p class="show-location">Vancouver, BC</p>
+                        <p class="show-info">All Ages • 7pm • $20</p>
+                    </div>
+                    <div class="show-actions">
+                        <a href="#" class="btn btn-small">Info</a>
+                    </div>
+                </div>
+
+                <!-- Placeholder for when no shows scheduled -->
+                <div class="no-shows" style="display: none;">
+                    <p>No upcoming shows scheduled at the moment. Check back soon or follow us on social media for announcements!</p>
+                </div>
+            </div>
+
+            <h2 class="past-shows-title">Past Shows</h2>
+            <div class="shows-list past-shows">
+                <!-- Example past show -->
+                <div class="show-item past">
+                    <div class="show-date">
+                        <span class="month">JAN</span>
+                        <span class="day">20</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="show-details">
+                        <h3 class="show-venue">Past Venue Name</h3>
+                        <p class="show-location">Victoria, BC</p>
+                    </div>
+                </div>
+
+                <div class="show-item past">
+                    <div class="show-date">
+                        <span class="month">DEC</span>
+                        <span class="day">10</span>
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="show-details">
+                        <h3 class="show-venue">Another Past Venue</h3>
+                        <p class="show-location">Nanaimo, BC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Terriblething. All rights reserved.</p>
+            <p class="footer-location">Victoria, BC</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
