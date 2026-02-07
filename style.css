@@ -109,8 +109,8 @@ body {
 .hero-image img {
     width: 100%;
     height: auto;
-    max-height: 400px;
-    object-fit: cover;
+    max-height: 500px;  /* Increased height limit */
+    object-fit: contain;  /* Shows full image without cropping */
     border-radius: 10px;
     display: block;
 }
