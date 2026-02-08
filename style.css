@@ -162,6 +162,10 @@ body {
     line-height: 0.85;
 }
 
+.hero-content h1 .terrible {
+    color: var(--red-accent);
+}
+
 .tagline {
     font-size: 1.1rem;
     color: var(--text-color);
