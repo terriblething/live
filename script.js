@@ -49,7 +49,7 @@ navLinks.forEach(link => {
     }
 });
 
-// Rotating photo on homepage with fade effect
+// Rotating photo on homepage with glitch effect
 const rotatingPhoto = document.getElementById('rotating-photo');
 if (rotatingPhoto) {
     const photos = [
@@ -67,17 +67,25 @@ if (rotatingPhoto) {
     let currentPhotoIndex = 0;
     
     setInterval(() => {
-        // Fade out
-        rotatingPhoto.style.opacity = '0';
-        
-        setTimeout(() => {
-            // Change image while invisible
-            currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
-            rotatingPhoto.src = photos[currentPhotoIndex];
+        // Glitch animation
+        let glitchCount = 0;
+        const glitchInterval = setInterval(() => {
+            rotatingPhoto.style.transform = `translate(${Math.random() * 20 - 10}px, ${Math.random() * 20 - 10}px)`;
+            rotatingPhoto.style.filter = `hue-rotate(${Math.random() * 360}deg)`;
+            glitchCount++;
             
-            // Fade back in
-            rotatingPhoto.style.opacity = '1';
-        }, 300);
-        
+            if (glitchCount > 8) {
+                clearInterval(glitchInterval);
+                rotatingPhoto.style.opacity = '0';
+                
+                setTimeout(() => {
+                    currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+                    rotatingPhoto.src = photos[currentPhotoIndex];
+                    rotatingPhoto.style.transform = 'translate(0, 0)';
+                    rotatingPhoto.style.filter = 'none';
+                    rotatingPhoto.style.opacity = '1';
+                }, 200);
+            }
+        }, 50);
     }, 5000);
 }
