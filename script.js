@@ -48,3 +48,34 @@ navLinks.forEach(link => {
         link.classList.remove('active');
     }
 });
+
+// Rotating photo on homepage with fade effect
+const rotatingPhoto = document.getElementById('rotating-photo');
+
+if (rotatingPhoto) {
+    const photos = [
+        'full_band.jpg',
+        'sam.jpg',
+        'michael_1.jpg',
+        'tony.jpg',
+        'pete_and_spence.jpg',
+        'pete.jpg'
+    ];
+    
+    let currentPhotoIndex = 0;
+    
+    setInterval(() => {
+        // Fade out
+        rotatingPhoto.style.opacity = '0';
+        
+        setTimeout(() => {
+            // Change image while invisible
+            currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+            rotatingPhoto.src = photos[currentPhotoIndex];
+            
+            // Fade back in
+            rotatingPhoto.style.opacity = '1';
+        }, 300);
+        
+    }, 5000);
+}
