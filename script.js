@@ -53,7 +53,7 @@ navLinks.forEach(link => {
 const rotatingPhoto = document.getElementById('rotating-photo');
 if (rotatingPhoto) {
     const photos = [
-        'images/full_band.jpg',
+        'images/crowd_1.jpg',
         'images/sam.jpg',
         'images/michael_1.jpg',
         'images/tony.jpg',
