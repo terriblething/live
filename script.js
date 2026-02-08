@@ -51,10 +51,8 @@ navLinks.forEach(link => {
 
 // Rotating photo on homepage with fade effect
 const rotatingPhoto = document.getElementById('rotating-photo');
-
 if (rotatingPhoto) {
     const photos = [
-        const photos = [
         'images/full_band.jpg',
         'images/sam.jpg',
         'images/michael_1.jpg',
