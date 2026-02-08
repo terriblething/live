@@ -54,12 +54,13 @@ const rotatingPhoto = document.getElementById('rotating-photo');
 
 if (rotatingPhoto) {
     const photos = [
-        'full_band.jpg',
-        'sam.jpg',
-        'michael_1.jpg',
-        'tony.jpg',
-        'pete_and_spence.jpg',
-        'pete.jpg'
+        const photos = [
+        'images/full_band.jpg',
+        'images/sam.jpg',
+        'images/michael_1.jpg',
+        'images/tony.jpg',
+        'images/pete_and_spence.jpg',
+        'images/pete.jpg'
     ];
     
     let currentPhotoIndex = 0;
