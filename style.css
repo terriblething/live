@@ -333,6 +333,7 @@ body {
 
 .social-icons {
     display: flex;
+    font-size: 48px;
     gap: 0;
     flex-wrap: wrap;
 }
